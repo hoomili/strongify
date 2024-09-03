@@ -1,10 +1,16 @@
 import React from 'react';
-import { Slot } from "expo-router";
+import { Stack } from "expo-router";
 
-const RootLayout = () => {
-  return <Slot />;
+const Layout = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="index" options={{ title: 'Home' }} />
+      <Stack.Screen name="excercise-details" options={{ title: 'Exercise Details' }} />
+
+    </Stack.Navigator>
+  );
 
 };
 
-export default RootLayout;
+export default Layout;
 
