@@ -11,3 +11,5 @@ const ExcerciseDetailsScreen = () => {
     </StyledView>
   );
 };
+
+export default ExcerciseDetailsScreen;
